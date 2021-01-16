@@ -5,6 +5,8 @@ export default function Home() {
   return (
       <Head>
         <title>Create Next App</title>
+
+        <p>Hello world</p>
       </Head>
 
   )
