@@ -26,7 +26,7 @@ const Home: React.FC = () => {
   return (
     <Container>
       <Head>
-        <title>Homepage</title>
+        <title>Igor Amantino</title>
       </Head>
       <Navigation>
         <Image src={react} width={30} height={30} />
