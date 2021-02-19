@@ -1,6 +1,12 @@
 import React from 'react'
 
-import { Container, Title, Main, HobblieTitle, Icon, Tophome } from './styles'
+import {
+  Container,
+  Main,
+  HobblieTitle,
+  Icon,
+  Tophome
+} from '../../styles/pages/styles'
 import home from '../../assets/home.png'
 import Image from 'next/image'
 

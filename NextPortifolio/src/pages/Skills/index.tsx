@@ -9,7 +9,7 @@ import {
   ContainerLogo,
   IconsDiv,
   Main
-} from './styles'
+} from '../../styles/pages/skills'
 
 import Html from '../../assets/skills/html.png'
 import Css from '../../assets/skills/css.png'
@@ -20,6 +20,7 @@ import styled from '../../assets/skills/logo.png'
 import cell from '../../assets/skills/phone.png'
 import redux from '../../assets/skills/redux.png'
 import home from '../../assets/home.png'
+
 const Skills: React.FC = () => {
   return (
     <Container>
