@@ -21,7 +21,7 @@ const About: React.FC = () => {
           to know rocketseat and i started to make the GoStack bootcamp on it.
           NodeJS Currently i work as a ReactJS and React-Native and Typescript
           developer at Compasso-Uol, English study 1hr daily looking for a day
-          international career or living
+          international career or living.
         </p>
         <HobblieTitle>Hobbies 🛹🏋️📈 </HobblieTitle>
         <Icon>🛹</Icon>
