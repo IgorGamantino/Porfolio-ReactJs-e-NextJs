@@ -22,26 +22,32 @@ const About: React.FC = () => {
 
       <Main>
         <p>
-          My name is Igor Amantino, I started my career as a developer in the
-          beginning of 2020, studyng javascript, after a little knowledge, i got
-          to know rocketseat and i started to make the GoStack bootcamp on it.
-          NodeJS Currently i work as a ReactJS and React-Native and Typescript
-          developer at Compasso-Uol, English study 1hr daily looking for a day
-          international career or living.
+          My name is Igor Amantino, I started my career as a developer at early
+          2020, studying javascript, after a little knowledge, I met rocketseat
+          and started making the GoStack bootcamp, they covered several subjects
+          and technologies such as NodeJS, ReactJS, React-native and typescript
+          and I currently work as
+          <span> ReactJS and React-Native and Typescript </span>
+          developer at Compasso-Uol, English study 1h a day looking for a day
+          international career or living abroad.
         </p>
         <HobblieTitle>Hobbies 🛹🏋️📈 </HobblieTitle>
         <Icon>🛹</Icon>
         <p>
-          Desde de pequeno gostava de andar de skate e hoje ja faz uns 10 anos
-          que continuo nesse esporte mais atualmente so finais de semana
+          Since I liked to skate a little, today it's been 10 years that I am
+          still in this sport I continue since that boy's passion but nowadays I
+          practice this sport only on weekends.
         </p>
         <Icon>🏋️</Icon>
-        <p>Faço academia diaramente, atentamente para manter minha saude</p>
+        <p>
+          I practice physical exercises daily to maintain a better health and
+          enjoy the sport.
+        </p>
         <Icon>📈</Icon>
         <p>
-          Entrei no mercado finançeiro a pouco meses penso em investir a longo
-          tempo, gosto de investir para garantir meu futuro e minha
-          aposentadoria
+          I entered the financial market a few months ago, but I already fell in
+          love with the market, I think about keeping my investments in the long
+          term and guaranteeing a better future and a peaceful retirement.
         </p>
       </Main>
     </Container>
