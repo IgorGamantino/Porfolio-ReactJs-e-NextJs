@@ -19,10 +19,9 @@ const About: React.FC = () => {
           My name is Igor Amantino, I started my career as a developer in the
           beginning of 2020, studyng javascript, after a little knowledge, i got
           to know rocketseat and i started to make the GoStack bootcamp on it.
-          NodeJS Currently i work as a
-          <span> ReactJS and React-Native and Typescript</span> developer at
-          Compasso-Uol, English study 1hr daily looking for a day international
-          career or living
+          NodeJS Currently i work as a ReactJS and React-Native and Typescript
+          developer at Compasso-Uol, English study 1hr daily looking for a day
+          international career or living
         </p>
         <HobblieTitle>Hobbies 🛹🏋️📈 </HobblieTitle>
         <Icon>🛹</Icon>
