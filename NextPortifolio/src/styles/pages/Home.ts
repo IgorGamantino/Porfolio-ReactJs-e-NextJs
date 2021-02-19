@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import Image from 'next/image'
 import Typical from 'react-typical'
 export const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 `
 
 export const Navigation = styled.nav`
@@ -24,8 +24,6 @@ export const Main = styled.main`
   margin-top: 10rem;
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
 `
 
 export const Info = styled.div`
@@ -47,16 +45,13 @@ export const Info = styled.div`
 `
 
 export const ContentImg = styled.div`
-  margin-top: 10rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  z-index: 111;
-  border-radius: 15px;
-  left: 30px;
+  position: absolute;
   top: 30px;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
-  position: fixed !important;
+  left: 20px;
+`
+export const Profile = styled(Image)`
+  border-radius: 5px;
+  top: 1px;
 `
 
 export const Icons = styled.div`
