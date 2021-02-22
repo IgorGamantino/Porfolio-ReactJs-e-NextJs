@@ -31,7 +31,6 @@ const Home: React.FC = () => {
           <title>Igor Amantino</title>
         </Head>
         <Navigation>
-          <Image src={react} width={30} height={30} />
           <ul>
             <a href="/About">About</a>
             <a href="/Skills">Skills</a>
@@ -44,49 +43,51 @@ const Home: React.FC = () => {
           <ContentImg>
             <Profile src={photo} alt="igor" width={250} height={250} />
           </ContentImg>
-          <Icons>
-            <ul>
-              <li>
-                <a href="https://www.instagram.com/amantino.higoor/">
-                  <Image src={instaLogo} width={30} height={30} />
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/IgorGamantino">
-                  <Image src={gitHub} width={30} height={30} />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/igor-amantinoipaussu/">
-                  <Image src={linkLogo} width={30} height={30} />
-                </a>
-              </li>
-              <li>
-                <a href="http://wa.me/55014998441160">
-                  <Image src={whatLogo} width={30} height={30} />
-                </a>
-              </li>
-            </ul>
-          </Icons>
+
           <Info>
             <h2>I'am</h2>
             <h1>Igor Amantino</h1>
             <p>
               Motivated programmer, Web developer with React, more passionate
-              also about Mobile Development with React-Native
+              also about Mobile Development with React-Native.
             </p>
           </Info>
+
           <Animation
             wrapper="p"
             loop={Infinity}
             steps={[
-              " I'am developer Mobile React-Native",
+              " I'am developer Mobile React-Native.",
               5000,
-              "I'am developer Web ReactJs",
+              "I'am developer Web ReactJs.",
               3000
             ]}
           />
         </Main>
+        <Icons>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/amantino.higoor/">
+                <Image src={instaLogo} width={30} height={30} />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/IgorGamantino">
+                <Image src={gitHub} width={30} height={30} />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/igor-amantinoipaussu/">
+                <Image src={linkLogo} width={30} height={30} />
+              </a>
+            </li>
+            <li>
+              <a href="http://wa.me/55014998441160">
+                <Image src={whatLogo} width={30} height={30} />
+              </a>
+            </li>
+          </ul>
+        </Icons>
       </Container>
     </>
   )

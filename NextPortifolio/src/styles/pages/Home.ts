@@ -1,84 +1,262 @@
 import styled from 'styled-components'
 import Image from 'next/image'
 import Typical from 'react-typical'
+
+const size = {
+  mobileS: '320px',
+  mobileM: '375px',
+  mobileL: '425px',
+  tablet: '768px',
+  laptop: '1024px',
+  laptopL: '1440px'
+}
+
+export const device = {
+  mobileS: `(min-width: ${size.mobileS})`,
+  mobileM: `(min-width: ${size.mobileM})`,
+  mobileL: `(min-width: ${size.mobileL})`,
+  tablet: `(min-width: ${size.tablet})`,
+  laptop: `(min-width: ${size.laptop})`,
+  laptopL: `(min-width: ${size.laptopL})`
+}
+
 export const Container = styled.div`
   width: 100%;
   height: 100%;
 `
 
 export const Navigation = styled.nav`
-  padding: 23px 50px;
-  margin-bottom: 20px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+
+  ul {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
   a {
     color: #c4c4c4;
-    margin: 16px;
+    margin: 1rem;
     text-decoration: none;
     font-family: 'Roboto';
-    font-size: 17px;
+    font-size: 1rem;
+
+    a:hover {
+      color: #fff;
+    }
+  }
+
+  @media ${device.mobileM} {
+    ul {
+      padding: 2px;
+    }
+    a {
+      font-size: 0.7rem;
+      padding: -3px;
+    }
+  }
+
+  @media ${device.tablet} {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    a {
+      font-size: 1rem;
+    }
   }
 `
-
 export const Main = styled.main`
-  margin-top: 10rem;
-  position: relative;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media ${device.tablet} {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media ${device.laptop} {
+    position: relative;
+    top: -7rem;
+  }
+`
+export const ContentImg = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media ${device.tablet} {
+    display: flex;
+    margin-top: 2rem;
+    position: relative;
+    left: 40%;
+    align-items: center;
+    width: 25rem;
+  }
+
+  @media ${device.laptop} {
+    position: relative;
+    left: 2rem;
+    display: flex;
+    top: 40%;
+    bottom: -235px;
+  }
+`
+export const Profile = styled(Image)`
+  border-radius: 10px;
+  margin: 0 auto;
 `
 
 export const Info = styled.div`
-  max-width: 600px;
   margin: 0 auto;
+  margin-top: 2rem;
+
+  h2 {
+    margin-left: 1rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
   h1 {
     color: #fff;
-    font-size: 70px;
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1px;
-    margin-bottom: 34px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
   }
 
   p {
-    font-size: 20px;
+    padding-left: 1rem;
+    font-size: 1rem;
+    padding-right: 1rem;
+    text-align: justify;
     font-weight: 500;
-    margin-bottom: 50px;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  @media ${device.tablet} {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: -170px;
+    right: 6rem;
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-right: 6rem;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media ${device.laptop} {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-left: 10rem;
+
+    h2 {
+      font-size: 24px;
+    }
+    h1 {
+      font-size: 70px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  @media ${device.laptopL} {
+    h2 {
+      font-size: 24px;
+    }
+    h1 {
+      font-size: 70px;
+    }
+
+    p {
+      font-size: 20px;
+    }
   }
 `
 
-export const ContentImg = styled.div`
-  position: absolute;
-  top: 30px;
-  left: 20px;
-`
-export const Profile = styled(Image)`
-  border-radius: 5px;
-  top: 1px;
+export const Animation = styled(Typical)`
+  margin-left: 1rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+
+  @media ${device.tablet} {
+    position: absolute;
+    bottom: -1px;
+    left: 13%;
+    font-weight: bold;
+    font-style: oblique;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 1.3rem;
+  }
+
+  @media ${device.laptop} {
+    font-size: 2rem;
+    left: 27%;
+    bottom: -17rem;
+    font-weight: bold;
+    font-style: oblique;
+  }
 `
 
 export const Icons = styled.div`
-  position: absolute;
-  right: 20px;
-  transition: color 2s;
-
   ul {
-    list-style: none;
-    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
   }
-
   li {
-    line-height: 100%;
-    margin-top: 16px;
-    text-align: center;
+    list-style: none;
+    margin-left: 2rem;
   }
 
-  li:hover {
-    color: #fff;
+  @media ${device.tablet} {
+    ul {
+      padding-right: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      bottom: 80px;
+      position: relative;
+      padding-right: 2rem;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media ${device.laptop} {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px;
+    position: relative;
+    bottom: 120px;
+
+    ul {
+      padding-right: 15px;
+    }
   }
 `
-export const Animation = styled(Typical)`
-  margin-left: 320px;
-  font-size: 32px;
-  font-style: italic;
-  font-weight: 500;
-  color: #fff;
-  text-transform: uppercase;
-`
+// medias querys //
