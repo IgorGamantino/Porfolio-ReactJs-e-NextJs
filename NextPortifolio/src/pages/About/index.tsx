@@ -8,16 +8,17 @@ import {
   Tophome
 } from '../../styles/pages/styles'
 import home from '../../assets/home.png'
-import Image from 'next/image'
+
+import Link from 'next/link'
 
 const About: React.FC = () => {
   return (
     <Container>
       <Tophome>
         <h1 className="about">About</h1>
-        <a href="/">
-          <Image src={home} width={30} height={30} />
-        </a>
+        <Link href="/">
+          <img src={home} />
+        </Link>
       </Tophome>
 
       <Main>

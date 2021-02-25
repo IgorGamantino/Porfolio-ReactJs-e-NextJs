@@ -1,5 +1,4 @@
 import React from 'react'
-import Head from 'next/head'
 import {
   Container,
   Navigation,
@@ -11,6 +10,7 @@ import {
   Icons
 } from '../styles/pages/Home'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import photo from '../assets/euProfile.jpg'
 import react from '../assets/react.gif'
@@ -27,16 +27,16 @@ const Home: React.FC = () => {
   return (
     <>
       <Container>
-        <Head>
+        <header>
           <title>Igor Amantino</title>
-        </Head>
+        </header>
         <Navigation>
           <ul>
-            <a href="/About">About</a>
-            <a href="/Skills">Skills</a>
-            <a href="">Portfolio</a>
-            <a href="">Contact</a>
-            <a href="">Blog</a>
+            <Link href="/About">About</Link>
+            <Link href="/Skills">Skills</Link>
+            <Link href="">Portfolio</Link>
+            <Link href="">Contact</Link>
+            <Link href="">Blog</Link>
           </ul>
         </Navigation>
         <Main>
@@ -67,22 +67,28 @@ const Home: React.FC = () => {
         <Icons>
           <ul>
             <li>
-              <a href="https://www.instagram.com/amantino.higoor/">
+              <a
+                href="https://www.instagram.com/amantino.higoor/"
+                target="_brank"
+              >
                 <Image src={instaLogo} width={30} height={30} />
               </a>
             </li>
             <li>
-              <a href="https://github.com/IgorGamantino">
+              <a href="https://github.com/IgorGamantino" target="_brank">
                 <Image src={gitHub} width={30} height={30} />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/igor-amantinoipaussu/">
+              <a
+                href="https://www.linkedin.com/in/igor-amantinoipaussu/"
+                target="_brank"
+              >
                 <Image src={linkLogo} width={30} height={30} />
               </a>
             </li>
             <li>
-              <a href="http://wa.me/55014998441160">
+              <a href="http://wa.me/55014998441160" target="_brank">
                 <Image src={whatLogo} width={30} height={30} />
               </a>
             </li>

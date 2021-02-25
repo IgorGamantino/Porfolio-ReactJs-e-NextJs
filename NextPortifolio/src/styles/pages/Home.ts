@@ -44,10 +44,12 @@ export const Navigation = styled.nav`
     text-decoration: none;
     font-family: 'Roboto';
     font-size: 1rem;
-
-    a:hover {
-      color: #fff;
-    }
+    cursor: pointer;
+    transition: scale 2s;
+  }
+  a:hover {
+    color: #fff;
+    transform: scale(1.2);
   }
 
   @media ${device.mobileM} {
@@ -55,7 +57,7 @@ export const Navigation = styled.nav`
       padding: 2px;
     }
     a {
-      font-size: 0.7rem;
+      font-size: 1rem;
       padding: -3px;
     }
   }
@@ -80,8 +82,7 @@ export const Main = styled.main`
   }
 
   @media ${device.laptop} {
-    position: relative;
-    top: -7rem;
+    margin-top: -7rem;
   }
 `
 export const ContentImg = styled.div`
@@ -103,7 +104,7 @@ export const ContentImg = styled.div`
     left: 2rem;
     display: flex;
     top: 40%;
-    bottom: -235px;
+    bottom: -200px;
   }
 `
 export const Profile = styled(Image)`
@@ -195,7 +196,7 @@ export const Info = styled.div`
 export const Animation = styled(Typical)`
   margin-left: 1rem;
   color: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.1rem;
 
   @media ${device.tablet} {
@@ -213,7 +214,7 @@ export const Animation = styled(Typical)`
   @media ${device.laptop} {
     font-size: 2rem;
     left: 27%;
-    bottom: -17rem;
+    bottom: 2rem;
     font-weight: bold;
     font-style: oblique;
   }
@@ -225,10 +226,15 @@ export const Icons = styled.div`
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   li {
     list-style: none;
     margin-left: 2rem;
+    transition: scale 2s;
+  }
+  li:hover {
+    transform: scale(1.2);
   }
 
   @media ${device.tablet} {
@@ -237,7 +243,6 @@ export const Icons = styled.div`
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      bottom: 80px;
       position: relative;
       padding-right: 2rem;
     }
@@ -252,7 +257,6 @@ export const Icons = styled.div`
     justify-content: flex-end;
     padding: 0px;
     position: relative;
-    bottom: 120px;
 
     ul {
       padding-right: 15px;
