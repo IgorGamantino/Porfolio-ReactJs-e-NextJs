@@ -1,13 +1,11 @@
 import React from 'react'
-import Image from 'next/image'
+import Link from 'next/link'
 
 import {
   Container,
   SubTitle,
-  Title,
   DivTitle,
   ContainerLogo,
-  IconsDiv,
   Main
 } from '../../styles/pages/skills'
 
@@ -25,46 +23,51 @@ const Skills: React.FC = () => {
   return (
     <Container>
       <DivTitle>
-        <Title>SKILLS</Title>
-        <a href="/">
-          <Image src={home} width={30} height={30} />
-        </a>
+        <h1>SKILLS</h1>
+        <ul>
+          <Link href="/">
+            <div>
+              <img src={home} />
+              <p>Home</p>
+            </div>
+          </Link>
+        </ul>
       </DivTitle>
       <SubTitle>Using Now:</SubTitle>
       <Main>
         <ContainerLogo>
-          <IconsDiv>
-            <Image src={Html} width={50} height={60} />
+          <div>
+            <img src={Html} />
             <h1>HTML</h1>
-          </IconsDiv>
-          <IconsDiv>
-            <Image src={Css} width={50} height={60} />
+          </div>
+          <div>
+            <img src={Css} />
             <h1>CSS </h1>
-          </IconsDiv>
-          <IconsDiv>
-            <Image src={Javascript} width={50} height={60} />
+          </div>
+          <div>
+            <img src={Javascript} />
             <h1>Javascript</h1>
-          </IconsDiv>
-          <IconsDiv>
-            <Image src={react} width={50} height={60} />
+          </div>
+          <div>
+            <img src={react} />
             <h1>React</h1>
-          </IconsDiv>
-          <IconsDiv>
-            <Image src={typescript} width={50} height={60} />
+          </div>
+          <div>
+            <img src={typescript} />
             <h1>Typescript</h1>
-          </IconsDiv>
-          <IconsDiv>
-            <Image src={styled} width={50} height={60} />
+          </div>
+          <div>
+            <img src={styled} />
             <h1>Styled-Components</h1>
-          </IconsDiv>
-          <IconsDiv>
-            <Image src={cell} width={50} height={60} />
+          </div>
+          <div>
+            <img src={cell} />
             <h1>React Native</h1>
-          </IconsDiv>
-          <IconsDiv>
-            <Image src={redux} width={50} height={60} />
+          </div>
+          <div>
+            <img src={redux} />
             <h1>Redux</h1>
-          </IconsDiv>
+          </div>
         </ContainerLogo>
       </Main>
     </Container>

@@ -36,7 +36,6 @@ const Home: React.FC = () => {
             <Link href="/Skills">Skills</Link>
             <Link href="">Portfolio</Link>
             <Link href="">Contact</Link>
-            <Link href="">Blog</Link>
           </ul>
         </Navigation>
         <Main>
