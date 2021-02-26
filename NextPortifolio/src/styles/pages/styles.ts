@@ -53,12 +53,13 @@ export const Tophome = styled.header`
     align-items: center; */
   }
 
-  img {
+  div {
     display: flex;
     align-items: center;
+    flex-direction: column;
     width: 1.2rem;
     position: relative;
-    left: 4.5rem;
+
     font-size: 1rem;
     /* color: #c4c4c4;
     font-size: 1.25rem;
@@ -67,22 +68,29 @@ export const Tophome = styled.header`
     left: 455px;
     text-decoration: none; */
   }
+  img {
+    width: 2rem;
+    left: 4.5rem;
+  }
   @media ${device.mobileS} {
-    img {
+    div {
       left: 6.2rem;
+      width: 1.2rem;
       cursor: pointer;
     }
   }
   @media ${device.mobileM} {
-    img {
+    div {
       left: 7.9rem;
+      width: 1.2rem;
       cursor: pointer;
     }
   }
 
   @media ${device.mobileL} {
-    img {
+    div {
       left: 8.9rem;
+      width: 1.2rem;
       cursor: pointer;
     }
   }
@@ -92,7 +100,7 @@ export const Tophome = styled.header`
       font-size: 2rem;
     }
 
-    img {
+    div {
       width: 1.5rem;
       left: 17rem;
       cursor: pointer;
@@ -103,7 +111,7 @@ export const Tophome = styled.header`
       font-size: 2rem;
     }
 
-    img {
+    div {
       width: 1.5rem;
       left: 18rem;
       cursor: pointer;
@@ -114,9 +122,9 @@ export const Tophome = styled.header`
       font-size: 2rem;
     }
 
-    img {
+    div {
       width: 1.5rem;
-      left: 27rem;
+      left: 18rem;
       cursor: pointer;
     }
   }
@@ -156,7 +164,7 @@ export const Main = styled.main`
   @media ${device.laptop} {
     display: flex;
     flex-direction: column;
-    max-width: 80%;
+    max-width: 70%;
 
     p {
       font-size: 1.2rem;

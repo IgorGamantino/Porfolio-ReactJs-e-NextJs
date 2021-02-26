@@ -61,7 +61,7 @@ export const DivTitle = styled.div`
     align-items: center;
     cursor: pointer;
   }
-  img {
+   {
     width: 1.4rem;
     display: flex;
   }

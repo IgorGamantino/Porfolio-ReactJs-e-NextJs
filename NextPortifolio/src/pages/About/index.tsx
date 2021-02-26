@@ -17,7 +17,10 @@ const About: React.FC = () => {
       <Tophome>
         <h1 className="about">About</h1>
         <Link href="/">
-          <img src={home} />
+          <div>
+            <img src={home} />
+            <p>Home</p>
+          </div>
         </Link>
       </Tophome>
 
